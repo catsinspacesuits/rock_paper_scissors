@@ -12,11 +12,11 @@ class Rps
 	def	weapon_player
 		sleep(0.5) 
 		@weapon_player =	gets.chomp.downcase
-		if !(@weapon_player == "rock" || @weapon_player == "paper" || @weapon_player == "scissors")
+		if (@weapon_player == "rock" || @weapon_player == "paper" || @weapon_player == "scissors")
+			puts "You have chosen #{@weapon_player}"
+		else
 			puts "That's not rock, paper or scissors! Try again..."
 			weapon_player	
-		else
-			puts "You have chosen #{@weapon_player}"
 		end
 	end
 
