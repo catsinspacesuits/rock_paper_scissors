@@ -22,7 +22,7 @@ class Rps
 
 	def weapon_computer
 		sleep(1)
-		@weapon_computer = ["rock", "paper", "scissors"].sample(1).join(", ")
+		@weapon_computer = ["rock", "paper", "scissors"].sample.join(", ")
 		puts "Computer has chosen #{@weapon_computer}"
 	end
 
